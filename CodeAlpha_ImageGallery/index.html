@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery | CodeAlpha</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+    <h1>Image Gallery</h1>
+</header>
+
+    <!-- Filters -->
+    <section class="filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="nature">Nature</button>
+        <button class="filter-btn" data-filter="city">City</button>
+        <button class="filter-btn" data-filter="objects">Objects</button>
+        <button class="filter-btn" data-filter="abstract">Abstract</button>
+    </section>
+
+    <!-- Gallery -->
+    <section class="gallery"></section>
+
+    <!-- Lightbox -->
+    <div class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-img" src="" alt="">
+        <div class="lightbox-controls">
+            <button id="prev">&#10094;</button>
+            <button id="next">&#10095;</button>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+</html>
