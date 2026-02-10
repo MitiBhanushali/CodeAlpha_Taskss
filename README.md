@@ -1,1 +1,1 @@
-Frontend Developewnt CodelAplha Internship All Tasks
+Frontend Developewnt CodelAlpha Internship All Tasks
