@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #0b0b0b;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.player {
+    background: #141414;
+    padding: 40px;
+    border-radius: 20px;
+    width: 380px;
+    text-align: center;
+}
+
+.title {
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+
+.song-info {
+    margin-bottom: 20px;
+    color: #b5b5b5;
+    font-size: 1.05rem;
+}
+
+.progress-container {
+    background: #2a2a2a;
+    height: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.progress {
+    background: #fff;
+    height: 100%;
+    width: 0%;
+    border-radius: 5px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.controls button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.controls button:hover {
+    color: #b5b5b5;
+}
