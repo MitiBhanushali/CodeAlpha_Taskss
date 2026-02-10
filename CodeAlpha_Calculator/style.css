@@ -1,0 +1,184 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* App container */
+.app {
+    background: #1e1e2f;
+    width: 100%;
+    max-width: 420px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Desktop look */
+@media (min-width: 600px) {
+    .app {
+        height: 90vh;
+        border-radius: 20px;
+        box-shadow: 0 25px 50px rgba(0,0,0,0.4);
+    }
+}
+
+/* Top bar */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    color: #fff;
+}
+
+.top-bar button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* Display */
+#display {
+    margin: 8px 15px 5px;
+    height: 68px;
+    font-size: 28px;
+    border: none;
+    border-radius: 12px;
+    background: #111;
+    color: #fff;
+    padding: 15px;
+    text-align: right;
+}
+
+/* Buttons */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    padding: 15px;
+    margin-top: auto;
+}
+
+button {
+    height: 60px;
+    border-radius: 14px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    background: #2c2c44;
+    color: #fff;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #3d3d5c;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+/* Button types */
+.func {
+    background: #ff6b6b;
+}
+
+.func:hover {
+    background: #ff8585;
+}
+
+.op {
+    background: #5f7cff;
+}
+
+.op:hover {
+    background: #738cff;
+}
+
+.equals {
+    background: #4caf50;
+}
+
+.equals:hover {
+    background: #66bb6a;
+}
+
+.zero {
+    grid-column: span 2;
+}
+
+/* History panel */
+.history-panel {
+    position: absolute;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    color: #fff;
+    padding: 20px;
+    transition: 0.3s ease;
+    z-index: 10;
+}
+
+.history-panel.active {
+    right: 0;
+}
+
+/* History header */
+.history-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.history-header button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+#history p {
+    margin: 6px 0;
+    font-size: 14px;
+    opacity: 0.85;
+}
+
+.clear-history {
+    margin-top: 15px;
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    background: #ff4d6d;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Small devices */
+@media (max-width: 480px) {
+    #display {
+        font-size: 24px;
+        height: 60px;
+    }
+    button {
+        height: 55px;
+        font-size: 18px;
+    }
+}

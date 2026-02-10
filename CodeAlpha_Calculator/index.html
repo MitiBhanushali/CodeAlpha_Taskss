@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <span class="title">Calculator</span>
+        <button id="menuBtn">⋮</button>
+    </div>
+
+    <!-- History Panel -->
+    <div class="history-panel" id="historyPanel">
+        <div class="history-header">
+            <button id="closeHistory">←</button>
+            <span>History</span>
+        </div>
+
+        <div id="history"></div>
+        <button class="clear-history">Clear History</button>
+    </div>
+
+    <!-- Display -->
+    <input type="text" id="display" disabled>
+
+    <!-- Buttons -->
+    <div class="buttons">
+        <button class="func">AC</button>
+        <button class="func">⌫</button>
+        <button class="op">%</button>
+        <button class="op">÷</button>
+
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button class="op">×</button>
+
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button class="op">−</button>
+
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button class="op">+</button>
+
+        <button class="zero">0</button>
+        <button>.</button>
+        <button class="equals">=</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
